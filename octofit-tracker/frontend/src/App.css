@@ -1,0 +1,16 @@
+.app-shell { min-height: 100svh; display: flex; flex-direction: column; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px clamp(20px, 5vw, 64px); border-bottom: 1px solid var(--border); }
+.brand { color: var(--ink); font-size: 18px; font-weight: 800; letter-spacing: 1px; text-decoration: none; }
+.brand span { color: var(--coral); }
+nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
+.nav-link { color: var(--muted); padding: 7px 10px; font-size: 13px; text-decoration: none; }
+.nav-link.active, .nav-link:hover { color: var(--ink); }
+main { flex: 1; width: min(100% - 40px, 960px); margin: 0 auto; padding: 72px 0; }
+.overview { max-width: 650px; padding: 42px 0; }
+.eyebrow { color: var(--coral); font-size: 12px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
+.lede { max-width: 480px; color: var(--muted); font-size: 21px; margin: 0 0 28px; }
+.data-list { display: grid; gap: 10px; max-width: 680px; }
+.data-card { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 18px 20px; border: 1px solid var(--border); background: var(--paper); }
+.data-card span, .muted { color: var(--muted); }
+footer { padding: 22px clamp(20px, 5vw, 64px); color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); }
+@media (max-width: 700px) { .topbar { align-items: flex-start; flex-direction: column; } nav { justify-content: flex-start; } main { padding: 44px 0; } h1 { font-size: 42px; } }
